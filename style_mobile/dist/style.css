@@ -12,6 +12,7 @@ body {
 }
 
 .container {
+  max-width: 1296px;
   padding: 0 20px;
 }
 @media (min-width: 600px) {
@@ -26,7 +27,7 @@ body {
 }
 @media (min-width: 1920px) {
   .container {
-    padding: 0 86px;
+    padding: 0 44px;
   }
 }
 
@@ -189,6 +190,12 @@ body {
     gap: 12px;
   }
 }
+@media (min-width: 1920px) {
+  .section-cards {
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(2, 250px);
+  }
+}
 .section-card {
   padding: 16px 0 16px 16px;
   background-color: #121212;
@@ -275,6 +282,29 @@ body {
     height: 93px;
   }
 }
+@media (min-width: 1920px) {
+  .section-card-left {
+    grid-row: span 2;
+  }
+}
+@media (min-width: 1920px) {
+  .section-card-middle-down {
+    order: 4;
+  }
+}
 .section-card-middle-down__image .phone {
   display: none;
+}
+@media (min-width: 1920px) {
+  .section-card-middle-down__image .phone-small {
+    display: none;
+  }
+  .section-card-middle-down__image .phone {
+    display: block;
+  }
+}
+@media (min-width: 1920px) {
+  .section-card-right {
+    grid-row: span 2;
+  }
 }

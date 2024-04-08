@@ -9,7 +9,7 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap" rel="stylesheet">
 
-    <link rel="stylesheet" href="style/dist/style.css">
+    <link rel="stylesheet" href="style_mobile/dist/style.css">
 </head>
 <body>
     <header class="header">
@@ -25,7 +25,14 @@
                     <div class="header-menu-item"><a href="#">Сервис</a></div>
                     <div class="header-menu-item"><a href="#">Контакты</a></div>
                 </div>
-                <button class="header-button button">Заказать звонок</button>
+                <div class="header-button-wrap">
+                    <button class="header-button button">Заказать звонок</button>
+                    <div class="burger header-burger">
+                        <svg width="44" height="44" viewBox="0 0 44 44" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M8.375 29.2917C8.375 30.0971 9.02792 30.75 9.83333 30.75H33.1667C33.9721 30.75 34.625 30.0971 34.625 29.2917C34.625 28.4863 33.9721 27.8333 33.1667 27.8333H9.83333C9.02792 27.8333 8.375 28.4863 8.375 29.2917ZM8.375 22C8.375 22.8054 9.02792 23.4583 9.83333 23.4583H33.1667C33.9721 23.4583 34.625 22.8054 34.625 22C34.625 21.1946 33.9721 20.5417 33.1667 20.5417H9.83333C9.02792 20.5417 8.375 21.1946 8.375 22ZM9.83333 13.25C9.02792 13.25 8.375 13.9029 8.375 14.7083C8.375 15.5137 9.02792 16.1667 9.83333 16.1667H33.1667C33.9721 16.1667 34.625 15.5137 34.625 14.7083C34.625 13.9029 33.9721 13.25 33.1667 13.25H9.83333Z" fill="#0B457F"/>
+                        </svg>                        
+                    </div>
+                </div>                
             </div>
         </div>
         <div class="header-down">
@@ -76,7 +83,7 @@
                     <div class="section-card__title">Онлайн бронирование</div>
                     <div class="section-card__desc">Забронируйте понравившийся автомобиль <br> без визита в дилерский центр</div>
                     <button class="button section-card__button">Забронировать</button>
-                    <div class="section-card__image section-card-middle-down__image"><img src="images/phone.png" alt=""></div>
+                    <div class="section-card__image section-card-middle-down__image"><img class="phone" src="images/phone.png" alt=""><img class="phone-small" src="images/phone-small.png" alt=""></div>
                 </div>
                 <div class="section-card section-card-right">
                     <div class="section-card__title">Онлайн оценка <br> с пробегом</div>
